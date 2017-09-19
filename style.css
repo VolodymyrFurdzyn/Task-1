@@ -3,6 +3,7 @@ body {
     background-size: cover;
 	background-attachment: fixed;
     background-position:center;
+    text-align: center;
   
 }
 .logo
@@ -72,4 +73,8 @@ video
   padding-left: 30%;
 	padding-right: 24.5%;
 
+}
+
+.slide {
+	margin-left: 300px;
 }

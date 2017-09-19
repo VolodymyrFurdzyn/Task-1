@@ -26,6 +26,16 @@
 
 
 </nav>
+<div class="slide">
+<img class="mySlides" src="slides/slide1.jpg" width="900">
+<img class="mySlides" src="slides/slide2.jpg" width="900">
+<img class="mySlides" src="slides/slide3.jpg" width="900">
+<img class="mySlides" src="slides/slide4.jpg" width="900">
+</div>
+
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
 <div class="information">
 <p> <b>Мерседес</b> - одна з компаній, які стояли біля витоків автомобілебудування, її ім'я вже не просто є всесвітньо відомим брендом, 
 	а справжньою легендою з мільйонною армією шанувальників-власників автомашин цієї марки і ще більш широкою аудиторією тих, хто мріє про неї. Мерседес - 
@@ -56,6 +66,26 @@
 	 що надаються за єдиними для компанії стандартам, оригінальні запчастини Mercedes. У них завжди в наявності автозапчастини Мерседес для більшості моделей цієї марки, 
 	 а також широкий вибір аксесуарів для салону, чохлів, килимків, багажників, рулів і важелів КПП.</p>
 
+
+<script type="text/javascript">
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+</script>
 </div>
 </body>
 </html>
